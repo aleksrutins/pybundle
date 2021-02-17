@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+from pyb import main
+
+main()

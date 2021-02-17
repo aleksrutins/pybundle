@@ -8,6 +8,7 @@ setup(
     # author_email="",
     # url="",
     description="A project-level package manager for PyPI packages",
-    py_modules=["pybundle"]
+    packages=["pybundle", "pybundle.templates", "pybundle.util"],
+    scripts=['pyb']
 )
         
