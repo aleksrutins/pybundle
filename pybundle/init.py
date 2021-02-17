@@ -25,10 +25,10 @@ def init(args):
         write_template(setup.setup(params))
         write_template(reqs.reqs(params))
         write_template(main_script.main_script(params))
-        write_template(main_script.main_script({"script": module + "/__main__.py", "module": module}))
         write_template(pyb_yml.pyb_yml(params))
         os.mkdir(module)
         write_template(init_py.init_py(params))
+        write_template(main_script.main_script({"script": module + "/__main__.py", "module": module}))
     except AttributeError as e:
         print(e)
 
